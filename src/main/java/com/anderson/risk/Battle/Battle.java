@@ -1,4 +1,7 @@
-package com.anderson.risk;
+package com.anderson.risk.Battle;
+
+import com.anderson.risk.Player;
+import com.anderson.risk.Territory;
 
 import static com.anderson.risk.Util.ArgsUtil.requireThat;
 import static java.util.Objects.requireNonNull;
@@ -29,5 +32,8 @@ public class Battle {
         requireThat(defenderNumDice > 0 && defenderNumDice <= 2);
     }
 
+    public void roll() {
+
+    }
 
 }
