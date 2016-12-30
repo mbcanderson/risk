@@ -3,6 +3,9 @@ package com.anderson.risk.Battle;
 import com.anderson.risk.DiceSimulator.DiceSimulator;
 import com.anderson.risk.DiceSimulator.RandomNumberDiceSimulator;
 
+import javax.swing.*;
+import java.awt.*;
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 import static com.anderson.risk.Util.ArgsUtil.requireThat;
@@ -18,6 +21,9 @@ public class Roll {
 
     private final DiceSimulator diceSimulator;
 
+    private final RollWindow rollWindow;
+
+
     Roll(int numAttackingDice, int numDefendingDice) {
         this(numAttackingDice, numDefendingDice, new RandomNumberDiceSimulator());
     }
@@ -27,6 +33,7 @@ public class Roll {
         this.numAttackingDice = numAttackingDice;
         this.numDefendingDice = numDefendingDice;
         this.diceSimulator = requireNonNull(diceSimulator);
+        this.rollWindow = new RollWindow();
     }
 
     private void verifyQuantities(int numAttackingDice, int numDefendingDice) {
@@ -35,15 +42,16 @@ public class Roll {
     }
 
     RollResultsEvent results() {
-        PriorityQueue<Integer> attackingRolls = new PriorityQueue<>();
-        PriorityQueue<Integer> defendingRolls = new PriorityQueue<>();
-        simulateNRolls(attackingRolls, numAttackingDice);
-        simulateNRolls(defendingRolls, numDefendingDice);
-        return determineResultsAndGenerateEvent(attackingRolls, defendingRolls);
+        PriorityQueue<Integer> attackingRolls = simulateNAttackRolls(numAttackingDice);
+        PriorityQueue<Integer> defendingRolls = simulateNDefendRolls(numDefendingDice);
+        RollResultsEvent resultsEvent = determineResultsAndGenerateEvent(attackingRolls, defendingRolls);
+        rollWindow.display(resultsEvent.numArmiesAttackingLost(), resultsEvent.numArmiesDefendingLost());
+        return resultsEvent;
     }
 
     private RollResultsEvent determineResultsAndGenerateEvent(PriorityQueue<Integer> attackingRolls,
                                                               PriorityQueue<Integer> defendingRolls) {
+        int numAttackingRolls = attackingRolls.size();
         int numAttackingLost = 0;
         int numDefendingLost = 0;
         while (!defendingRolls.isEmpty() && !attackingRolls.isEmpty()) {
@@ -55,12 +63,26 @@ public class Roll {
                 numAttackingLost++;
             }
         }
-        return new RollResultsEvent(numAttackingLost, numDefendingLost);
+        return new RollResultsEvent(numAttackingLost, numDefendingLost, numAttackingRolls);
     }
 
-    private void simulateNRolls(PriorityQueue<Integer> rolls, int n) {
+    private PriorityQueue<Integer> simulateNAttackRolls(int n) {
+        PriorityQueue<Integer> rolls = new PriorityQueue<>(Collections.reverseOrder());
         for (int i=0; i<n; i++) {
-            rolls.add(diceSimulator.roll());
+            int value = diceSimulator.roll();
+            rolls.add(value);
+            rollWindow.addAttackerDie(value);
         }
+        return rolls;
+    }
+
+    private PriorityQueue<Integer> simulateNDefendRolls(int n) {
+        PriorityQueue<Integer> rolls = new PriorityQueue<>(Collections.reverseOrder());
+        for (int i=0; i<n; i++) {
+            int value = diceSimulator.roll();
+            rolls.add(value);
+            rollWindow.addDefenderDie(value);
+        }
+        return rolls;
     }
 }

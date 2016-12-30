@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11237d7d-861c-481c-a1ae-2b3354c81469" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/anderson/risk/Util/UIUtilTest.java" />
+    <list default="true" id="11237d7d-861c-481c-a1ae-2b3354c81469" name="Default" comment="Simulate one roll from start to finish">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/BattleManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleManagerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java" />
     </list>
     <ignored path="risk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,12 +32,12 @@
     <favorites_list name="risk" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Battle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="151">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,11 +45,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java">
+      <file leaf-file-name="BattleManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/BattleManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="121">
+              <caret line="64" column="106" selection-start-line="64" selection-start-column="106" selection-end-line="64" selection-end-column="106" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#782#783#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RollResultsEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+                <element signature="e#1504#1505#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BattleManagerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,34 +85,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JOptionPane.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java">
+      <file leaf-file-name="Territory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Territory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-10800">
-              <caret line="312" column="13" selection-start-line="312" selection-start-column="13" selection-end-line="312" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIUtilTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Util/UIUtilTest.java">
+      <file leaf-file-name="BattleTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="522">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArgsUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/ArgsUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -84,8 +110,8 @@
       <file leaf-file-name="Roll.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="286">
+              <caret line="65" column="89" selection-start-line="65" selection-start-column="89" selection-end-line="65" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +122,8 @@
       <file leaf-file-name="RollTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="217">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,38 +131,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomNumberDiceSimulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/DiceSimulator/RandomNumberDiceSimulator.java">
+      <file leaf-file-name="RollWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1200">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PredeterminedDiceSimulator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/DiceSimulator/PredeterminedDiceSimulator.java">
+      <file leaf-file-name="GridLayout.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="1875">
+              <caret line="148" column="11" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PredeterminedDiceSimulatorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/DiceSimulator/PredeterminedDiceSimulatorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#17255#0" expanded="false" />
+                <element signature="e#4996#4997#0" expanded="false" />
+                <element signature="e#5034#5035#0" expanded="false" />
+                <element signature="e#6628#6629#0" expanded="false" />
+                <element signature="e#6655#6656#0" expanded="false" />
+                <element signature="e#7365#7366#0" expanded="false" />
+                <element signature="e#7392#7393#0" expanded="false" />
+                <element signature="e#8445#8446#0" expanded="false" />
+                <element signature="e#8472#8473#0" expanded="false" />
+                <element signature="e#8693#8694#0" expanded="false" />
+                <element signature="e#8725#8726#0" expanded="false" />
+                <element signature="e#8903#8904#0" expanded="false" />
+                <element signature="e#8930#8931#0" expanded="false" />
+                <element signature="e#9147#9148#0" expanded="false" />
+                <element signature="e#9179#9180#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -173,18 +198,23 @@
         <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/TerritoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Territory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/DiceSimulator/DiceSimulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/DiceSimulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RandomNumberDiceSimulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/DiceSimulator/RandomNumberDiceSimulator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/DiceSimulator/PredeterminedDiceSimulator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/DiceSimulator/PredeterminedDiceSimulatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/Util/UIUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollWindow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/BattleManager.java" />
       </list>
     </option>
   </component>
@@ -269,8 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -463,7 +491,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,9 +506,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.anderson.risk.Battle" />
       <recent name="com.anderson.risk.Util" />
       <recent name="com.anderson.risk.DiceSimulator" />
-      <recent name="com.anderson.risk.Battle" />
       <recent name="com.anderson.risk" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -489,34 +519,8 @@
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UIUtilTest.testInputDialogBox">
-    <configuration default="false" name="PredeterminedDiceSimulatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.anderson.risk.DiceSimulator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="risk" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.anderson.risk.DiceSimulator" />
-      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.DiceSimulator.PredeterminedDiceSimulatorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RollTest.oneDieEach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BattleManagerTest.integrationTest">
+    <configuration default="false" name="BattleTest.integrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.anderson.risk.Battle.*" />
@@ -527,34 +531,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.anderson.risk.Battle" />
-      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Battle.RollTest" />
-      <option name="METHOD_NAME" value="oneDieEach" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RollTest.threeAgainstTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.anderson.risk.Battle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="risk" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.anderson.risk.Battle" />
-      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Battle.RollTest" />
-      <option name="METHOD_NAME" value="threeAgainstTwo" />
+      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Battle.BattleTest" />
+      <option name="METHOD_NAME" value="integrationTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -589,19 +567,71 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UIUtilTest.testInputDialogBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RollTest.identifiedBug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.anderson.risk.Util.*" />
+          <option name="PATTERN" value="com.anderson.risk.Battle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="risk" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.anderson.risk.Util" />
-      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Util.UIUtilTest" />
-      <option name="METHOD_NAME" value="testInputDialogBox" />
+      <option name="PACKAGE_NAME" value="com.anderson.risk.Battle" />
+      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Battle.RollTest" />
+      <option name="METHOD_NAME" value="identifiedBug" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.anderson.risk.Battle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="risk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.anderson.risk.Battle" />
+      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Battle.RollTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BattleManagerTest.integrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.anderson.risk.Battle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="risk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.anderson.risk.Battle" />
+      <option name="MAIN_CLASS_NAME" value="com.anderson.risk.Battle.BattleManagerTest" />
+      <option name="METHOD_NAME" value="integrationTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -895,19 +925,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PredeterminedDiceSimulatorTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RollTest.oneDieEach" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RollTest.threeAgainstTwo" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in risk" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UIUtilTest.testInputDialogBox" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BattleTest.integrationTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in risk" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RollTest.identifiedBug" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RollTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BattleManagerTest.integrationTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UIUtilTest.testInputDialogBox" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in risk" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RollTest.threeAgainstTwo" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RollTest.oneDieEach" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PredeterminedDiceSimulatorTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BattleManagerTest.integrationTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BattleTest.integrationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RollTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RollTest.identifiedBug" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in risk" />
       </list>
     </recent_temporary>
   </component>
@@ -943,69 +973,76 @@
       <option name="project" value="LOCAL" />
       <updated>1482969047511</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create util for simple dialog box int input">
+      <created>1482970412703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482970412703</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_risk - 2016.12.28 at 15h 53m 30s.xml">
-      <configuration name="All in risk" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 20m 57s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PredeterminedDiceSimulatorTest - 2016.12.28 at 15h 42m 17s.xml">
-      <configuration name="PredeterminedDiceSimulatorTest" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 21m 34s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PredeterminedDiceSimulatorTest_throwsErrorAfterRollingAll - 2016.12.28 at 15h 40m 39s.xml">
-      <configuration name="PredeterminedDiceSimulatorTest.throwsErrorAfterRollingAll" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 23m 07s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RollTest_oneDieEach - 2016.12.28 at 15h 48m 02s.xml">
-      <configuration name="RollTest.oneDieEach" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 35m 19s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RollTest_threeAgainstTwo - 2016.12.28 at 15h 49m 27s.xml">
-      <configuration name="RollTest.threeAgainstTwo" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 36m 35s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RollTest_threeAgainstTwo - 2016.12.28 at 15h 49m 46s.xml">
-      <configuration name="RollTest.threeAgainstTwo" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 37m 39s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TerritoryTest - 2016.12.28 at 12h 55m 09s.xml">
-      <configuration name="TerritoryTest" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 42m 03s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UIUtilTest_testInputDialogBox - 2016.12.28 at 16h 05m 42s.xml">
-      <configuration name="UIUtilTest.testInputDialogBox" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 43m 32s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UIUtilTest_testInputDialogBox - 2016.12.28 at 16h 10m 15s.xml">
-      <configuration name="UIUtilTest.testInputDialogBox" configurationId="JUnit" />
+    <history-entry file="BattleManagerTest_integrationTest - 2016.12.30 at 13h 44m 39s.xml">
+      <configuration name="BattleManagerTest.integrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UIUtilTest_testInputDialogBox - 2016.12.28 at 16h 12m 40s.xml">
-      <configuration name="UIUtilTest.testInputDialogBox" configurationId="JUnit" />
+    <history-entry file="BattleTest_integrationTest - 2016.12.30 at 12h 53m 57s.xml">
+      <configuration name="BattleTest.integrationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39308578" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1318822" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35083225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39308578" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1318822" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21030043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1042,10 +1079,13 @@
     <MESSAGE value="Created DiceSimulator" />
     <MESSAGE value="Add the skeleton of Battle, Player, and Territory" />
     <MESSAGE value="Create Roll simulation (needed PredeterminedDiceSimulator)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Roll simulation (needed PredeterminedDiceSimulator)" />
+    <MESSAGE value="Create util for simple dialog box int input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create util for simple dialog box int input" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1053,19 +1093,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#532#533#0" expanded="false" />
-            <element signature="e#607#608#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,22 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Territory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1192">
@@ -1144,27 +1168,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/DiceSimulator/DiceSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,10 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,39 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,28 +1207,190 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Util/UIUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10800">
-          <caret line="312" column="13" selection-start-line="312" selection-start-column="13" selection-end-line="312" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/UIUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="367">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="1012" column="16" selection-start-line="1012" selection-start-column="16" selection-end-line="1012" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/javax/swing/JOptionPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4230">
+          <caret line="335" column="36" selection-start-line="335" selection-start-column="36" selection-end-line="335" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#108866#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#44389#44390#0" expanded="false" />
+            <element signature="e#44435#44436#0" expanded="false" />
+            <element signature="e#76413#76414#0" expanded="false" />
+            <element signature="e#76456#76457#0" expanded="false" />
+            <element signature="e#76756#76757#0" expanded="false" />
+            <element signature="e#76800#76801#0" expanded="false" />
+            <element signature="e#77415#77416#0" expanded="false" />
+            <element signature="e#77473#77474#0" expanded="false" />
+            <element signature="e#83404#83405#0" expanded="false" />
+            <element signature="e#83443#83444#0" expanded="false" />
+            <element signature="e#83719#83720#0" expanded="false" />
+            <element signature="e#83777#83778#0" expanded="false" />
+            <element signature="e#84045#84046#0" expanded="false" />
+            <element signature="e#84077#84078#0" expanded="false" />
+            <element signature="e#84739#84740#0" expanded="false" />
+            <element signature="e#84769#84770#0" expanded="false" />
+            <element signature="e#85440#85441#0" expanded="false" />
+            <element signature="e#85467#85468#0" expanded="false" />
+            <element signature="e#86548#86549#0" expanded="false" />
+            <element signature="e#86576#86577#0" expanded="false" />
+            <element signature="e#88738#88739#0" expanded="false" />
+            <element signature="e#88773#88774#0" expanded="false" />
+            <element signature="e#90374#90375#0" expanded="false" />
+            <element signature="e#90408#90409#0" expanded="false" />
+            <element signature="e#91948#91949#0" expanded="false" />
+            <element signature="e#91981#91982#0" expanded="false" />
+            <element signature="e#93510#93511#0" expanded="false" />
+            <element signature="e#93548#93549#0" expanded="false" />
+            <element signature="e#94478#94479#0" expanded="false" />
+            <element signature="e#94522#94523#0" expanded="false" />
+            <element signature="e#95980#95981#0" expanded="false" />
+            <element signature="e#96013#96014#0" expanded="false" />
+            <element signature="e#96382#96383#0" expanded="false" />
+            <element signature="e#96422#96423#0" expanded="false" />
+            <element signature="e#97565#97566#0" expanded="false" />
+            <element signature="e#97598#97599#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/java/awt/GridLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="148" column="11" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#17255#0" expanded="false" />
+            <element signature="e#4996#4997#0" expanded="false" />
+            <element signature="e#5034#5035#0" expanded="false" />
+            <element signature="e#6628#6629#0" expanded="false" />
+            <element signature="e#6655#6656#0" expanded="false" />
+            <element signature="e#7365#7366#0" expanded="false" />
+            <element signature="e#7392#7393#0" expanded="false" />
+            <element signature="e#8445#8446#0" expanded="false" />
+            <element signature="e#8472#8473#0" expanded="false" />
+            <element signature="e#8693#8694#0" expanded="false" />
+            <element signature="e#8725#8726#0" expanded="false" />
+            <element signature="e#8903#8904#0" expanded="false" />
+            <element signature="e#8930#8931#0" expanded="false" />
+            <element signature="e#9147#9148#0" expanded="false" />
+            <element signature="e#9179#9180#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Util/UIUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Territory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/RollTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/RollResultsEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Roll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="65" column="89" selection-start-line="65" selection-start-column="89" selection-end-line="65" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/Battle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/anderson/risk/Battle/BattleManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="64" column="106" selection-start-line="64" selection-start-column="106" selection-end-line="64" selection-end-column="106" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#782#783#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/anderson/risk/Battle/BattleManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

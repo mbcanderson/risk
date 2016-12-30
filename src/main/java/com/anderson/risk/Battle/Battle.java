@@ -1,9 +1,10 @@
 package com.anderson.risk.Battle;
 
-import com.anderson.risk.Player;
 import com.anderson.risk.Territory;
 
-import static com.anderson.risk.Util.ArgsUtil.requireThat;
+import javax.swing.*;
+
+import static com.anderson.risk.Util.FileUtil.iconFromImagesFile;
 import static java.util.Objects.requireNonNull;
 
 /**
@@ -11,29 +12,45 @@ import static java.util.Objects.requireNonNull;
  */
 public class Battle {
 
-    private final Territory territory;
-    private final Player attacker;
-    private final Player defender;
+    private final Territory attackingTerritory;
+    private final Territory defendingTerritory;
 
-    private final int attackerNumDice;
-    private final int defenderNumDice;
-
-    public Battle(Territory territory, Player attacker, int attackerNumDice, int defenderNumDice) {
-        this.territory = requireNonNull(territory);
-        this.attacker = requireNonNull(attacker);
-        this.defender = requireNonNull(territory.occupant());
-        verifyNumDice(attackerNumDice, defenderNumDice);
-        this.attackerNumDice = attackerNumDice;
-        this.defenderNumDice = defenderNumDice;
+    public Battle(Territory attackingTerritory, Territory defendingTerritory) {
+        this.attackingTerritory = requireNonNull(attackingTerritory);
+        this.defendingTerritory = requireNonNull(defendingTerritory);
     }
 
-    private void verifyNumDice(int attackerNumDice, int defenderNumDice) {
-        requireThat(attackerNumDice > 0 && attackerNumDice <= 3);
-        requireThat(defenderNumDice > 0 && defenderNumDice <= 2);
+    public RollResultsEvent roll() {
+        int attackerNumDice = showAttackingDialog();
+        int defenderNumDice = showDefendingDialog();
+        Roll roll = new Roll(attackerNumDice, defenderNumDice);
+        return roll.results();
     }
 
-    public void roll() {
+    int showAttackingDialog() {
+        Integer[] options = {1, 2, 3};
+        Integer i = (Integer) JOptionPane.showInputDialog(
+                new JFrame(),
+                "How many armies would you like to attack with?",
+                "Attacker",
+                JOptionPane.PLAIN_MESSAGE,
+                iconFromImagesFile("swords"),
+                options,
+                3);
+        return i;
+    }
 
+    int showDefendingDialog() {
+        Integer[] options = {1, 2};
+        Integer i = (Integer) JOptionPane.showInputDialog(
+                new JFrame(),
+                "How many armies would you like to defend with?",
+                "Defender",
+                JOptionPane.PLAIN_MESSAGE,
+                iconFromImagesFile("shield"),
+                options,
+                2);
+        return i;
     }
 
 }

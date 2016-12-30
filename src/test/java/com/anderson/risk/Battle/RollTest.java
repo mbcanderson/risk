@@ -15,34 +15,45 @@ public class RollTest {
     public void oneDieEach() {
         DiceSimulator simulator = new PredeterminedDiceSimulator(1, 1);
         Roll roll = new Roll(1, 1, simulator);
-        checkResult(1, 0, roll);
+        checkResult(1, 0, roll, 1);
 
         simulator = new PredeterminedDiceSimulator(1, 4);
         roll = new Roll(1, 1, simulator);
-        checkResult(1, 0, roll);
+        checkResult(1, 0, roll, 1);
 
         simulator = new PredeterminedDiceSimulator(6, 4);
         roll = new Roll(1, 1, simulator);
-        checkResult(0, 1, roll);
+        checkResult(0, 1, roll, 1);
     }
 
     @Test
     public void threeAgainstTwo() {
         DiceSimulator simulator = new PredeterminedDiceSimulator(6, 6, 6, 6, 5);
         Roll roll = new Roll(3, 2, simulator);
-        checkResult(1, 1, roll);
+        checkResult(1, 1, roll, 3);
 
         simulator = new PredeterminedDiceSimulator(3, 4, 5, 6, 5);
         roll = new Roll(3, 2, simulator);
-        checkResult(2, 0, roll);
+        checkResult(2, 0, roll, 3);
 
         simulator = new PredeterminedDiceSimulator(2, 2, 2, 1, 1);
         roll = new Roll(3, 2, simulator);
-        checkResult(0, 2, roll);
+        checkResult(0, 2, roll, 3);
     }
 
-    private void checkResult(int expectedNumAttackingLost, int expectedNumDefendingLost, Roll roll) {
-        RollResultsEvent expectedResults = new RollResultsEvent(expectedNumAttackingLost, expectedNumDefendingLost);
+    @Test
+    public void identifiedBug() {
+        DiceSimulator simulator = new PredeterminedDiceSimulator(1, 4, 5, 2, 6);
+        Roll roll = new Roll(3, 2, simulator);
+        checkResult(1, 1, roll, 3);
+    }
+
+    private void checkResult(int expectedNumAttackingLost, int expectedNumDefendingLost, Roll roll, int numRolled) {
+        RollResultsEvent expectedResults = new RollResultsEvent(
+                expectedNumAttackingLost,
+                expectedNumDefendingLost,
+                numRolled);
         assertEquals(expectedResults, roll.results());
     }
+
 }
